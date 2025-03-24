@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiAppMinhasCompras", "MauiAppMinhasCompras\MauiAppMinhasCompras.csproj", "{5881917C-AD48-42B2-8B31-30BCA1F20D83}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiAppMinhasCompras", "MauiAppMinhasCompras\MauiAppMinhasCompras.csproj", "{F82D60FC-47A9-44AE-A3B3-C91E422EC542}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5881917C-AD48-42B2-8B31-30BCA1F20D83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5881917C-AD48-42B2-8B31-30BCA1F20D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5881917C-AD48-42B2-8B31-30BCA1F20D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5881917C-AD48-42B2-8B31-30BCA1F20D83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F82D60FC-47A9-44AE-A3B3-C91E422EC542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82D60FC-47A9-44AE-A3B3-C91E422EC542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82D60FC-47A9-44AE-A3B3-C91E422EC542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82D60FC-47A9-44AE-A3B3-C91E422EC542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {115204F5-7814-4027-B913-8BC97BB38BC6}
+		SolutionGuid = {4BD7EBF3-E30A-4239-AD23-CDA7A9B67454}
 	EndGlobalSection
 EndGlobal

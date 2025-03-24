@@ -9,27 +9,25 @@ public partial class NovoProduto : ContentPage
 	{
 		InitializeComponent();
 	}
+	 
 
-    private async Task ToolbarItem_Clicked(object sender, EventArgs e)
+    private async void ToolbarItem_Clicked_1(object sender, EventArgs e)
     {
-		try
-		{
-			Produto produto = new Produto
-			{
-				Descricao = txt_desc.Text,
+        try
+        {
+            Produto p = new Produto
+            {
+                Descricao = txt_descricao.Text,
+                Quantidade = Convert.ToDouble(txt_qtde.Text),
+                Preco = Convert.ToDouble(txt_preco.Text),
+            };
 
-				Quantidade = Convert.ToInt32(txt_quantidade.Text),
-
-				Preco = Convert.ToDouble(txt_preco.Text),
-			};
-
-			await App._Db.Insert(produto);
-			await DisplayAlert("Sucesso!", "Registro Inserido", "OK");
-		}
-		catch (Exception ex)
-		{
-
-			DisplayAlert("Ops", ex.Message, "OK");
-		}
+            await App.Db.Insert(p);
+            await DisplayAlert("Sucesso", "Produto inserido com sucesso", "OK");
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("EPA!", ex.Message, "OK");
+        }
     }
 }
