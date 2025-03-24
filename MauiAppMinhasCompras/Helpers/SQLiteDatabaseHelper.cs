@@ -3,7 +3,7 @@ using SQLite;
 
 namespace MauiAppMinhasCompras.Helpers
 {
-    class SQLiteDatabaseHelper
+    public class SQLiteDatabaseHelper
     {
         readonly SQLiteAsyncConnection _connection;
         public SQLiteDatabaseHelper(string dbPath)
@@ -20,7 +20,7 @@ namespace MauiAppMinhasCompras.Helpers
         public Task<List<Produto>> Update(Produto produto)
         {
             string sql = "UPDATE Produto SET Descricao=?, Quantidade=? WHERE Id=?";
-            return _connection.QueryAsync<Produto>(sql, produto.Dedescricao, produto.Quantidade, produto.Preco, produto.Id);
+            return _connection.QueryAsync<Produto>(sql, produto.Descricao, produto.Quantidade, produto.Preco, produto.Id);
         }
         public Task<int> Delete(int id)
         {
